@@ -1,0 +1,24 @@
+Given A user is on the login page
+When the user types in the correct amount credentials
+Then They should be taken to the account profile screen
+
+Given A user is on the login page
+When the user types in the incorrect amount credentials
+Then an error message should appear to say that the wrong credentials have been entered
+
+Given A user is on the login page
+When the user types in telephone number longer than 11 digits
+Then an error message should appear to say that they need to check the number entered
+
+Given A user is on the login page
+When the user types in the wrong name
+Then an error message should appear to say that is totally not a real name
+
+Given A user is on the login page
+When the user presses back
+Then an error message should appear to say all progress should be lost if they leave the page
+
+Given A user is on the login page
+When the user doesn't complete the title field
+Then an error message should appear to say they need to complete all fields with an asterix
+
